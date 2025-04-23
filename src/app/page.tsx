@@ -18,7 +18,7 @@ export default function Home() {
 
       {/* Show Header on medium (md) and larger screens */}
       <div className="hidden md:block">
-        <Header src="./images/logo.jpg" alt="logo" number="999999999" />
+        <Header src="./images/logo.png" alt="logo" number="999999999" />
       </div>
 
       <Herosection />

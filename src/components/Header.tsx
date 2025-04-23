@@ -3,6 +3,7 @@
 import React from 'react'
 import Link from 'next/link'
 import Button from './Button'
+// import MobileSidebar from './Sidebar'    
 // import Image from 'next/image'
 
 interface props {
@@ -61,11 +62,12 @@ const Header = ({ src, alt, number }: props) => {
     // </div>
     <div>
         <header className="flex flex-col md:flex-row bg-amber-900 w-full px-6 py-4 md:py-6 md:px-10 items-center justify-between gap-4">
+            
             {/* Left: Logo + Navigation */}
             <section className="flex flex-col md:flex-row justify-start items-center gap-4 w-full">
             {/* Logo */}
             <div>
-                <img className="rounded" src={src} alt={alt} width={40} />
+                <img className="rounded-lg" src={src} alt={alt} width={60} />
             </div>
 
             {/* Nav */}
