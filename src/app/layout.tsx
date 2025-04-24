@@ -55,7 +55,9 @@ export default function RootLayout({
         <MobileSidebar />
       </div>
         {children}
-        <Footer number="9999999999" liItems={liItems}/>
+        <div className="mx-4 my-6">
+          <Footer number="9999999999" liItems={liItems}/>
+        </div>
       </body>
     </html>
   );

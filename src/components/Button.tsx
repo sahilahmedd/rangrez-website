@@ -1,4 +1,6 @@
 import React from "react";
+import { HeartHandshake } from "lucide-react";
+
 
 interface Type {
   label: string;
@@ -6,14 +8,14 @@ interface Type {
   customStyle: string;
 }
 
-const Button = ({ label, onClick, customStyle }: Type) => {
+const Button = ({ label, onClick, customStyle, }: Type) => {
   return (
       <button
         className={`whitespace-nowrap text-black font-semibold cursor-pointer border-1 bg-amber-100 px-4 py-2 duration-300 ease-in-out hover:bg-[#F9C80E] rounded-lg ${customStyle}`}
         onClick={onClick}
       >
-        {label}
-      </button>
+        {label} 
+      </button> 
   );
 };
 

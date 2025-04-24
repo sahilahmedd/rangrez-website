@@ -18,7 +18,7 @@ interface props {
 
 const Footer = ({ liItems,number }: props) => {
   return (
-    <div className='flex w-full h-96 bg-sky-800 px-40 py-10'>
+    <div className='flex w-full h-96 bg-[#1D3922] px-40 py-10 rounded-2xl'>
       <section className=' w-[30%]'>
           <Link href="/">
             <Image 
