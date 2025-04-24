@@ -84,8 +84,8 @@ const Header = ({ src, alt, number }: props) => {
 
             {/* Right: Donate button + number */}
             <section className="flex flex-col sm:flex-row items-center gap-2 md:gap-4 text-sm md:text-base">
-            <Button customStyle="" label="Donate Now" />
-            <p className="whitespace-nowrap text-white font-semibold">+91-{number}</p>
+            <Button customStyle="border-dashed" label="Donate Now" />
+            <p className="whitespace-nowrap text-white font-semibold"><Link href={`tel:${number}`}>+91-{number}</Link></p>
             </section>
         </header>
     </div>

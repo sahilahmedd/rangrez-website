@@ -49,7 +49,7 @@ const Herosection = () => {
                 Empowering Communities Through Faith & Charity
             </h1>
 
-            <p className="text-base sm:text-lg md:text-xl mb-6 max-w-2xl">
+            <p className="text-base sm:text-lg md:text-xl font-semibold mb-6 max-w-2xl">
                 Our Islamic foundation is dedicated to helping those in need and spreading the message of unity and compassion.
             </p>
 
