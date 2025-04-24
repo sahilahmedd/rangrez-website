@@ -6,32 +6,21 @@ import Button from './Button'
 // import MobileSidebar from './Sidebar'    
 // import Image from 'next/image'
 
+interface NavItem {
+    label: string;
+    path: string;
+}
+
 interface props {
     src: any,
     alt: string,
     number: string
+    liItems: NavItem[]
 }
 
-const Header = ({ src, alt, number }: props) => {
+const Header = ({ src, alt, number, liItems }: props) => {
 
-    const liItems = [
-        {
-            label: "Home",
-            path: "/"
-        },
-        {
-            label: "About",
-            path: "/about"
-        },
-        {
-            label: "Gallery",
-            path: "/gallery"
-        },
-        {
-            label: "Contact Us",
-            path: "/contact"
-        }
-    ]
+
 
 
   return (
