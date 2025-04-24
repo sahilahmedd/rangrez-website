@@ -1,28 +1,10 @@
-import Footer from "@/components/Footer";
-import Header from "@/components/Header";
-import Herosection from "@/components/Herosection";
-import MobileSidebar from "@/components/Sidebar";
+// import Footer from "@/components/home/Footer";
+// import Header from "@/components/home/Header";
+import Herosection from "@/components/home/Herosection";
+// import MobileSidebar from "@/components/Sidebar";
 
 export default function Home() {
 
-  const liItems = [
-    {
-        label: "Home",
-        path: "/"
-    },
-    {
-        label: "About",
-        path: "/about"
-    },
-    {
-        label: "Gallery",
-        path: "/gallery"
-    },
-    {
-        label: "Contact Us",
-        path: "/contact"
-    }
-]
 
   return (
     // <div className="">
@@ -33,17 +15,13 @@ export default function Home() {
 
     <div className="relative w-full">
       {/* Show Mobile Sidebar on small screens only */}
-      <div className="block md:hidden">
-        <MobileSidebar />
-      </div>
+      
 
       {/* Show Header on medium (md) and larger screens */}
-      <div className="hidden md:block">
-        <Header liItems={liItems} src="./images/logo.png" alt="logo" number="999999999" />
-      </div>
+      
 
       <Herosection />
-      <Footer liItems={liItems}/>
+      {/* <Footer number="9999999999" liItems={liItems}/> */}
     </div>
     );
 }

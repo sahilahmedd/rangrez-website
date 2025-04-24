@@ -2,7 +2,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import React from 'react'
 import Link from 'next/link'
-import Button from './Button'
+import Button from '../Button'
 // import MobileSidebar from './Sidebar'    
 // import Image from 'next/image'
 

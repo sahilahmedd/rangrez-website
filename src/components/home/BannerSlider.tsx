@@ -1,8 +1,10 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image'
 
 
-const BannerSlider = ({ bannerImg }) => {
+
+const BannerSlider = ({ bannerImg }: any) => {
   const [index, setIndex] = useState(0);
 
   const slideRight = () => {
@@ -12,7 +14,7 @@ const BannerSlider = ({ bannerImg }) => {
   useEffect(() => {
     const interval = setInterval(slideRight, 4000);
     return () => clearInterval(interval);
-  }, [bannerImg.length]);
+  });
 
   return (
     <div className="relative w-full h-[600px] overflow-hidden z-0">

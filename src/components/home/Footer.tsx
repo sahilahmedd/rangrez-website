@@ -1,7 +1,9 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
-import { UrlObject } from 'url'
+import { MapPin, Phone } from 'lucide-react'
+import { UrlObject } from 'url';
 
 interface NavItem {
   label: string;
@@ -10,10 +12,11 @@ interface NavItem {
 
 interface props {
   liItems: NavItem[]
+  number: string
 }
 
 
-const Footer = ({ liItems }: props) => {
+const Footer = ({ liItems,number }: props) => {
   return (
     <div className='flex w-full h-96 bg-sky-800 px-40 py-10'>
       <section className=' w-[30%]'>
@@ -37,6 +40,17 @@ const Footer = ({ liItems }: props) => {
             </li>
         ))}
         </ul>
+      </section>
+      <section className='w-[30%]'>
+          <h3 className='text-white text-lg font-semibold'>Get in Touch</h3>
+          <div className='text-white flex gap-4 mt-4'>
+          <MapPin size={30}/>
+          <p>Address: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad, aperiam.</p>
+          </div>
+          <div className='text-white flex gap-4 mt-4'>
+          <Phone size={20}/>
+          <p><Link href={`tel:${number}`}>+91-{number}</Link></p>
+          </div>
       </section>
     </div>
   )

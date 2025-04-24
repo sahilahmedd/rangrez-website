@@ -1,12 +1,16 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 "use client"
 import React, { useEffect, useState } from "react";
-import Button from "./Button";
+import Button from "../Button";
 import BannerSlider from "./BannerSlider";
+
+interface BannerItem {
+    img: string;
+  } 
 
 const Herosection = () => {
 
-    const [banner, setBanner] = useState([]);
+    const [banner, setBanner] = useState<BannerItem[]>([]);
 
     const bannerImg = [
         {
@@ -82,7 +86,7 @@ const Herosection = () => {
         <div className="absolute top-0 left-0 w-full h-[500px] z-20 flex justify-center items-center px-4 py-16 sm:px-6 lg:px-12">
             <section className="text-center text-white max-w-4xl">
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight mb-4">
-                Empowering Communities Through Faith & Charity
+                 Empowering the Rangrez Community
             </h1>
 
             <p className="text-base sm:text-lg md:text-xl font-semibold mb-6 max-w-2xl mx-auto">
